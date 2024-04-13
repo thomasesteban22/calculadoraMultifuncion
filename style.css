@@ -185,3 +185,7 @@ span{
 .formulario.oculto {
     visibility: hidden;
 }
+.row{
+    justify-content: center;
+    width: 100%;
+}
