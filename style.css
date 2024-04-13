@@ -4,7 +4,7 @@
 }
 #divIzquierda{
     background-color: blanchedalmond;
-    width: 40%;
+    width: 30%;
     float: left;
     height: 100%;
     display: flex;
@@ -12,7 +12,7 @@
 }
 #divDerecha{
     background-color: ghostwhite;
-    width: 60%;
+    width: 70%;
     float: right;
     height: 100%;
 }
