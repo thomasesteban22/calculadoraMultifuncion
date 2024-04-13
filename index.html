@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+<div id="divContenedor">
+    <div id="divIzquierda">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <button id="btn-formulario1" type="button" class="btn-formulario btn btn-dark">Minimo comun multiplo</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button id="btn-formulario2" type="button" class="btn-formulario btn btn-dark">Maximo comun divisor</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button id="btn-formulario3" type="button" class="btn-formulario btn btn-dark">Division entera</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button id="btn-formulario4" type="button" class="btn-formulario btn btn-dark">Numeros primos</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button id="btn-formulario5" type="button" class="btn-formulario btn btn-dark">Succesion Fibonnaci</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button id="btn-formulario6" type="button" class="btn-formulario btn btn-dark">Teorema de Euler</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button id="btn-formulario7" type="button" class="btn-formulario btn btn-dark">Combinacion - con repeticion</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button id="btn-formulario8" type="button" class="btn-formulario btn btn-dark">Combinacion - sin repeticion</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button id="btn-formulario9" type="button" class="btn-formulario btn btn-dark">Permutacion - con repeticion</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button id="btn-formulario10" type="button" class="btn-formulario btn btn-dark">Permutacion - sin repeticion</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="divDerecha">
+        <div class="divSuperior">
+            <form id="formulario1" class="formulario oculto">
+                <h1>Calcular mcm</h1>
+                <div class="mb-3">
+                    <label for="valorA" class="form-label">Valor a</label>
+                    <input required type="number" class="form-control" id="valorA" >
+                </div>
+                <div class="mb-3">
+                    <label for="valorB" class="form-label">Valor b</label>
+                    <input required type="number" class="form-control" id="valorB">
+                </div>
+                <button type="submit" class="calcular btn btn-primary">Calcular mcm</button>
+            </form>
+            <form id="formulario2" class="formulario oculto">
+                <h1>Calcular mcd</h1>
+                <div class="mb-3">
+                    <label for="valorA2" class="form-label">Valor a</label>
+                    <input required type="number" class="form-control" id="valorA2">
+                </div>
+                <div class="mb-3">
+                    <label for="valorB2" class="form-label">Valor b</label>
+                    <input required type="number" class="form-control" id="valorB2">
+                </div>
+                <button type="submit" class="calcular btn btn-primary">Calcular mcd</button>
+            </form>
+            <form id="formulario3" class="formulario oculto">
+                <h1>Calcular division entera</h1>
+                <div class="mb-3">
+                    <label for="valorA3" class="form-label">Valor a</label>
+                    <input required type="number" class="form-control" id="valorA3">
+                </div>
+                <div class="mb-3">
+                    <label for="valorB3" class="form-label">Valor b</label>
+                    <input required type="number" class="form-control" id="valorB3">
+                </div>
+                <button type="submit" class="calcular btn btn-primary">Calcular division</button>
+            </form>
+            <form id="formulario4" class="formulario oculto">
+                <h1>¿Es numero primo?</h1>
+                <div class="mb-3">
+                    <label for="valorA4" class="form-label">Numero</label>
+                    <input required type="number" class="form-control" id="valorA4">
+                </div>
+                <button type="submit" class="calcular btn btn-primary">Revisar</button>
+            </form>
+            <form id="formulario5" class="formulario oculto">
+                <h1>¿Cuantos números de la sucesion Fibonacci quiere ver?</h1>
+                <div class="mb-3">
+                    <label for="valorA5" class="form-label">Cantidad</label>
+                    <input required type="number" class="form-control" id="valorA5">
+                </div>
+                <button type="submit" class="calcular btn btn-primary">Mostrar</button>
+            </form>
+            <form id="formulario7" class="formulario oculto">
+                <h1>Combinacion con repeticion</h1>
+                <div class="mb-3">
+                    <label for="valorA7" class="form-label">Valor m</label>
+                    <input required type="number" class="form-control" id="valorA7">
+                </div>
+                <div class="mb-3">
+                    <label for="valorB7" class="form-label">Valor s</label>
+                    <input required type="number" class="form-control" id="valorB7">
+                </div>
+                <button type="submit" class="calcular btn btn-primary">Calcular</button>
+            </form>
+            <form id="formulario8" class="formulario oculto">
+                <h1>Combinacion sin repeticion</h1>
+                <div class="mb-3">
+                    <label for="valorA8" class="form-label">Valor m</label>
+                    <input required type="number" class="form-control" id="valorA8">
+                </div>
+                <div class="mb-3">
+                    <label for="valorB8" class="form-label">Valor s</label>
+                    <input required type="number" class="form-control" id="valorB8">
+                </div>
+                <button type="submit" class="calcular btn btn-primary">Calcular</button>
+            </form>
+            <form id="formulario9" class="formulario oculto">
+                <h1>Permutacion con repeticion</h1>
+                <div class="mb-3">
+                    <label for="valorA9" class="form-label">Valor m</label>
+                    <input required type="number" class="form-control" id="valorA9">
+                </div>
+                <div class="mb-3">
+                    <label for="valorB9" class="form-label">Valor s</label>
+                    <input required type="number" class="form-control" id="valorB9">
+                </div>
+                <button type="submit" class="calcular btn btn-primary">Calcular</button>
+            </form>
+            <form id="formulario10" class="formulario oculto">
+                <h1>Permutacion sin repeticion</h1>
+                <div class="mb-3">
+                    <label for="valorA10" class="form-label">Valor m</label>
+                    <input required type="number" class="form-control" id="valorA10">
+                </div>
+                <div class="mb-3">
+                    <label for="valorB10" class="form-label">Valor s</label>
+                    <input required type="number" class="form-control" id="valorB10">
+                </div>
+                <button type="submit" class="calcular btn btn-primary">Calcular</button>
+            </form>
+
+        </div>
+        <div id="divInferior">
+            <span id="textoConsola">></span>
+        </div>
+
+
+    </div>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
